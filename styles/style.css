@@ -1,0 +1,53 @@
+body{
+    background-color: rgb(9, 150, 150);
+    height: 2000px;
+}
+.navbar{
+    font-size:large;
+}
+.navbar span{
+    color: blue ;
+}
+
+/* content image */
+.img-content{
+    background-image: url("/img/cargo.jpg");
+    min-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 80%;
+    -webkit-mask-image: linear-gradient(rgba(0, 0, 0, 1) 85%, rgba(0, 0, 0, 0));;
+    mask-image: linear-gradient(rgba(0, 0, 0, 1) 85%, rgba(0, 0, 0, 0));
+}
+
+.text{
+    font-size: 5em;
+    position: fixed;
+    top: 120px;
+    color:#0b023b;
+    font-weight: 700;
+    text-align: center;
+}
+.btn{
+    /* position: fixed; */
+    top: 400px;
+    left: 630px;
+    z-index: -1;
+}
+
+.about,.product{
+    padding: 8rem 7% 1.4rem;
+}
+.about h1,.product h1{
+    margin-bottom: 20px;
+    text-align: center;
+}
+.about .content-about{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: justify;
+    gap: 10px;
+}
+.about .img-content-about{
+    
+}
