@@ -31,7 +31,7 @@ body{
 
 /* content image */
 .img-content{
-    background-image: url("/img/cargo.jpg");
+    background-image: url("/img/cargo-image.jpg");
     min-height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
