@@ -1,12 +1,32 @@
+:root{
+    --primary-color:#0b023b;
+    --secondary-color:white;
+}
 body{
     background-color: rgb(9, 150, 150);
     height: 2000px;
+    font-family: 'Belanosima', sans-serif;
 }
 .navbar{
     font-size:large;
 }
 .navbar span{
-    color: blue ;
+    color: var(--secondary-color) ;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.5pc;
+}
+/* text image */
+.text span{
+    color: var(--secondary-color);
+}
+#home .btn{
+    /* position: fixed; */
+    top: 400px;
+    left: 630px;
+    z-index: -1;
+    color: var(--primary-color);
+    font-weight:600;
 }
 
 /* content image */
@@ -24,30 +44,76 @@ body{
     font-size: 5em;
     position: fixed;
     top: 120px;
-    color:#0b023b;
+    color: var(--primary-color);
     font-weight: 700;
     text-align: center;
 }
-.btn{
-    /* position: fixed; */
-    top: 400px;
-    left: 630px;
-    z-index: -1;
-}
+/* about, contact and services*/
 
-.about,.product{
+.about,.services, .contact{
     padding: 8rem 7% 1.4rem;
 }
-.about h1,.product h1{
-    margin-bottom: 20px;
+.about h1,.services h1, .contact h1{
+    margin-bottom: 50px;
     text-align: center;
+    color: var(--secondary-color);
+    text-transform: uppercase;
 }
-.about .content-about{
+.about .content-about,.services .content-services .land-services,.services .content-services .sea-services,.services .content-services .sky-services, .contact .content-contact{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns:  repeat(auto-fit, minmax(20rem, 1fr));
     text-align: justify;
-    gap: 10px;
+    gap: 50px;
+    margin-bottom: 50px;
 }
-.about .img-content-about{
-    
+.about .img-content-about img,.services .img-content-services a img{
+    width: 100%;
 }
+.about .paragraph-content-about span,.about span,.services span,.services .paragraph-content-services span, .contact span{
+    color:var(--primary-color);
+}
+.about .paragraph-content-about h2,.services .paragraph-content-services h2{
+    text-transform: uppercase;
+    color: var(--secondary-color);
+}
+.about .paragraph-content-about p,.services .paragraph-content-services p{
+    color: var(--secondary-color);
+}
+
+/* contact */
+.contact{
+    color: var(--secondary-color);
+}
+.contact .info-detail .col-md-6 .detail{
+    width: 250px;
+    height: 250px;
+    background-color: var(--primary-color);
+    margin-bottom: 40px;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 20px;
+}
+.content-contact .info-detail .detail i{
+    font-size: 3rem;
+}
+.content-contact .detail h3{
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.content-contact .row .col-md-6:nth-child(2) .detail p,.content-contact .row:nth-child(2) .col-md-6 .detail p{
+    letter-spacing: 3px;
+}
+/* footer */
+footer.footer{
+    padding: 20px;
+    width: 100%;
+    background-color: var(--secondary-color);
+    text-align: center;
+    color: var(--primary-color);
+}
+.footer a i{
+    font-size: 2rem;
+    margin-left: 10px;
+    color: var(--primary-color);
+}
+
